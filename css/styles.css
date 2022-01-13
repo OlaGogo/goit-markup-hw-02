@@ -1,0 +1,52 @@
+/* :root {
+    --header-text-color: #212121;
+    --first-btn-color: ;
+    --second-btn-color: ;
+    --first-title-color: ;
+    --second-title-color: ;
+    --first-text-color: #303030;
+    --accent-color: ; #2F303A*/
+
+    /* Цвета
+- основной-  #212121
+- вторичный- #757575
+- белый- #FFFFFF
+- акцентный- #2196F3 
+-тел.,емайл- rgba(255, 255, 255, 0.6);
+-осн.цвет фона-#E5E5E5
+-акц.цвет фона- #2F303A
+-доп.цвет фона-#F5F4FA
+*/
+
+body {
+    background-color: #E5E5E5;
+    color: #212121;
+    font-family: "Roboto", sans-serif
+}
+.list {
+    list-style: none;
+}
+ a {
+     text-decoration: none;
+ }
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.logo {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+}
+.logo-accent {
+    color:  #2196F3;
+}
