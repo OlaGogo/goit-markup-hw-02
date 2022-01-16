@@ -92,6 +92,7 @@
     color: #FFFFFF;
 }  
  .hero-btn  {
+    font-family:inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1,88;
@@ -101,6 +102,7 @@
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--accent-color);
+    cursor: pointer;
 } 
  .hero-btn:hover, 
  .hero-btn:focus {
@@ -114,7 +116,6 @@
     line-height: 1,14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-text-color);
 }
 /* Вопрос: нужно ли указывать заголовку цвет текста, 
            если для всего body указать этот цвет?*/
@@ -137,7 +138,6 @@
     line-height: 1,17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text-color)
 }
 /* можно объединить в один класс:
 .section-title {
@@ -198,6 +198,7 @@
 
   /* -----------------------PORTFOLIO------------------------ */
   .filter-btn {
+    font-family:inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1,63;
@@ -205,7 +206,9 @@
     letter-spacing: 0.03em;
     color: #212121;
     background-color:  #F5F4FA;
+    cursor: pointer;
   }
+
   .filter-btn:hover,
   .filter-btn:focus {
    color: #FFFFFF;
@@ -216,7 +219,6 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--main-text-color);
   }
   .works-text {
     font-weight: 700;
