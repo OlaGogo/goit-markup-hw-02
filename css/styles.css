@@ -1,36 +1,31 @@
-/* :root {
+ :root {
     --header-text-color: #212121;
-    --first-btn-color: ;
-    --second-btn-color: ;
-    --first-title-color: ;
-    --second-title-color: ;
-    --first-text-color: #303030;
-    --accent-color: ; #2F303A*/
+    --header-info-color:#757575;
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --logo-color: #000000;
+    --logo-accent-color: #2196F3;
+    --accent-color: #2196F3;
+    --bg-wight-color: #FFFFFF;
+    --bg-black-color: #2F303A;
+    --bg-lgrey-color:#E5E5E5;
+    --bg-grey-color:#F5F4FA;
 
-    /* Цвета
-- основной-  #212121
-- вторичный- #757575
-- белый- #FFFFFF
-- акцентный- #2196F3 
--тел.,емайл- rgba(255, 255, 255, 0.6);
--осн.цвет фона-#E5E5E5
--акц.цвет фона- #2F303A
--доп.цвет фона-#F5F4FA
-*/
+}
 
-body {
-    background-color: #E5E5E5;
-    color: #212121;
+ body {
+    color: var(--main-text-color);
     font-family: "Roboto", sans-serif
 }
-.list {
+
+ .list {
     list-style: none;
 }
  a {
      text-decoration: none;
  }
 
-.visually-hidden {
+ .visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -43,10 +38,190 @@ body {
     margin: -1px;
 }
 
-.logo {
-    color: #000000;
+ .logo {
+    color: var(--logo-color);
     font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
 }
-.logo-accent {
-    color:  #2196F3;
+ .logo-accent {
+    color: var(--logo-accent-color);
 }
+/* -----------Навигация-------------- */
+ .header {
+    background-color: var(--bg-wight-color);
+}
+ .navigation-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 2%;
+    color: var(--header-text-color);
+}
+ .header-item {
+    font-weight: 500;
+     font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 2%;
+    color: var(--header-info-color);   
+}
+ .navigation-item:hover, 
+ .navigation-item:focus {
+    color: var(--accent-color);
+}
+ .header-item:hover,
+ .header-item:focus {
+      color: var(--accent-color);
+  }
+ .current {
+    color: var(--accent-color);
+}
+/* -------------Hero----------------- */
+  .hero {
+   background-color: var(--bg-black-color);
+}
+ .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}  
+ .hero-btn  {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+} 
+ .hero-btn:hover, 
+ .hero-btn:focus {
+    background-color: #188ce8;
+} 
+
+/* --------------About------------------ */
+ .about-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+/* Вопрос: нужно ли указывать заголовку цвет текста, 
+           если для всего body указать этот цвет?*/
+
+ .about-text {
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color)
+}
+/* -------------------About@Img bg----------------------- */
+ .about, .img {
+    background-color: var(--bg-lgrey-color);
+}
+/* ----------Img------Img@Team titles-------------------- */
+
+ .img-title, .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color)
+}
+/* можно объединить в один класс:
+.section-title {
+
+    font-size: 36px;
+    line-height: 1,17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color)
+ */
+
+/* ------------------------Team---------------------------- */
+ .team {
+    background-color: var(--bg-grey-color);
+}
+ .team-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    }
+ .team-profession {
+    font-size: 16px;
+    line-height: 1,19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    }
+    /* -----------------------Footer------------------------ */
+    .footer {
+        background-color: var(--bg-black-color);
+    }
+ .footer-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }  
+  .footer-address:hover,
+  .footer-address:focus {
+      color: var(--accent-color); 
+  }
+
+  .footer-item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+    .footer-item:hover,
+    .footer-item:focus {
+      color: var(--accent-color);
+  }
+
+  /* -----------------------PORTFOLIO------------------------ */
+  .filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background-color:  #F5F4FA;
+  }
+  .filter-btn:hover,
+  .filter-btn:focus {
+   color: #FFFFFF;
+   background-color: #2196F3;
+  }
+  .works-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+  }
+  .works-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,88;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+  }
